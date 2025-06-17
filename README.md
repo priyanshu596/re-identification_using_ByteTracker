@@ -2,13 +2,15 @@
 
 This project performs object detection and tracking on a football match video using a custom YOLOv8 model and ByteTrack. The goal is to track **players**, **referees**, and **goalkeepers**, while **ignoring the ball**.
 
+---
+
 ## 📁 Folder Structure
 
-📦project-root/
+📦 project-root/
 ┣ 📜 best.pt # Your trained YOLOv8 model
 ┣ 📜 15sec_input_720p.mp4 # Input video
 ┣ 📁 ByteTrack/ # Cloned ByteTrack repo (automated in setup)
-┣ 📁 /runs/track/tracked_output/ # Output folder with tracked .avi and .mp4 files
+┣ 📁 runs/track/tracked_output/ # Output folder with tracked .avi and .mp4 files
 ┣ 📜 README.md
 
 yaml
@@ -84,7 +86,8 @@ Edit
 It contains bounding boxes and IDs for each tracked player (referees, goalkeepers, outfield players).
 
 📝 Notes
-Make sure your best.pt is trained on correct classes: 0: ball, 1: goalkeeper, 2: player, 3: referee.
+Make sure your best.pt is trained on correct classes:
+0: ball, 1: goalkeeper, 2: player, 3: referee
 
 This setup is optimized for Google Colab.
 
@@ -93,13 +96,4 @@ Evaluation metrics like MOTA/MOTP require ground truth annotations in MOT format
 ✍️ Author
 Developed by Priyanshu Singh
 B.Tech in Electronics & Communication Engineering
-📧 [priyanshu.asn2003@gmail.com]
-
-
-
-
-
-
-
-
-
+📧 priyanshu.asn2003@gmail.com
